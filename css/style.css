@@ -3,7 +3,11 @@
 body {
 margin: 0;
 background: black;
+}
 
+:root {
+  --base-font-size: 16px;
+  --fluid-typography-ratio: 0.9;
 }
 
 #wrapper {
@@ -12,6 +16,7 @@ background: black;
 }
 
 #masthead {
+  padding: 0 1rem;
 	background-color: #ff7300;
 }
 
@@ -35,7 +40,6 @@ background: black;
 
 #logo {
 padding: 0;
-
 }
 
 #logo a {
@@ -43,12 +47,12 @@ color: var(--body-color);
 text-decoration: none;
 display: flex;
 align-items: center;
-justify-content: center;
 }
 
 #logo img {
-	width: 40%;
-	height: auto;display
+	width: 200px;
+	height: auto;
+  display: block;
 }
 
 #slider {
@@ -107,7 +111,7 @@ justify-content: center;
   }
 
   #logo a {
-  	width: 25%;
+    justify-content: center;
   }
 
 }
