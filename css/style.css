@@ -57,11 +57,12 @@ align-items: center;
 
 #slider {
   overflow: hidden;
+
 }
 
 #slider .prev, #slider .next {
   position: absolute;
-  z-index: 2;
+  z-index: 5;
   margin: 1rem;
   font-size: 3em;
   height: 100%;
@@ -75,7 +76,7 @@ align-items: center;
 }
 
 .next {
-  right: 0;
+  right: 100px;
 }
 
 .prev span, .next span {
@@ -83,6 +84,54 @@ align-items: center;
   display: block;
   background: #fff;
 }
+
+
+h1 {
+  color: white;
+  font-family: Futura;
+  background: blue;
+  text-align: center;
+}
+
+h3 {
+  color: #ff7512;
+}
+
+#brandon img{
+  display: flex;
+  justify-content: center;
+}
+
+p {
+  color: white;
+  font-family: helvetica;
+  display: flex;
+  justify-content: center;
+}
+
+.michael img {
+  display: flex;
+  justify-content: center;
+}
+
+#podcast img {
+  position: absolute;
+  width: 50%;
+  padding-top: 30px
+}
+
+#link a {
+text-decoration: none;
+padding-bottom: 50px;
+color: white;
+font-family: futura;
+}
+
+#link a:hover {
+text-decoration: none;
+color: orange;
+}
+
 
 #slider-inner {
 
@@ -98,6 +147,65 @@ align-items: center;
   width: 50%;
 }
 
+
+ {
+  box-sizing: border-box;
+}
+
+/* Style inputs */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  font-family: futura;
+}
+
+input[type=submit] {
+  background-color: #26168c;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+  font-family: futura;
+}
+
+input[type=submit]:hover {
+  background-color: #ff7512;
+}
+
+/* Style the container/contact section */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+s
 
 @media all and (max-width: 699px) { 
 
